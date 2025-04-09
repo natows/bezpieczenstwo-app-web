@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .page-transition {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Add these classes to your page components */
+  .home-page,
+  .user-page,
+  .admin-page {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .login-page {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Loading animation */
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  .loading {
+    animation: pulse 1.5s infinite;
+  }
